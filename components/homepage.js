@@ -3,11 +3,11 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const posts = [
-  { id: 1, title: "Post 1", content: "Content for post 1", src: "/public/post1.jpg" },
-  { id: 2, title: "Post 2", content: "Content for post 2", src: "/public/post2.jpg" },
-  { id: 3, title: "Post 3", content: "Content for post 3", src: "/public/post3.jpg" },
-  { id: 4, title: "Post 4", content: "Content for post 4", src: "/public/post4.jpg" },
-  { id: 5, title: "Post 5", content: "Content for post 5", src: "/public/post5.jpg" },
+  { id: 1, title: "Post 1", content: "Content for post 1", src: "post1.jpg" },
+  { id: 2, title: "Post 2", content: "Content for post 2", src: "post2.jpg" },
+  { id: 3, title: "Post 3", content: "Content for post 3", src: "post3.jpg" },
+  { id: 4, title: "Post 4", content: "Content for post 4", src: "post4.jpg" },
+  { id: 5, title: "Post 5", content: "Content for post 5", src: "post5.jpg" },
 ];
 
 export default function Hero() {
@@ -25,9 +25,6 @@ export default function Hero() {
       <img
         src={currentPost.src}
         alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-4">
