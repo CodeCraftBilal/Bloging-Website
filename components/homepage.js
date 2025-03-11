@@ -22,22 +22,24 @@ export default function Hero() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <img
-        src={currentPost.src}
-        alt="Background Image"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      <img src={currentPost.src} alt="Background Image" className="absolute inset-0 w-full h-full object-cover"/>
+
       <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-4">
         <h1 className="text-2xl md:text-4xl">Welcome to My Blog</h1>
       </div>
+      
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+      
         <h2 className="text-xl md:text-3xl">
           {posts[currentPost].title}
         </h2>
+      
         <p className="mt-2">
           {posts[currentPost].content}
         </p>
+      
       </div>
+    
     </div>
   );
 }
