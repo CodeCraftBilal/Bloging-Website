@@ -22,8 +22,7 @@ export default function Hero() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <img src={currentPost.src} alt="Background Image" className="absolute inset-0 w-full h-full object-cover"/>
-
+      <img src={posts[currentPost].src} alt="Background Image" className="absolute inset-0 w-full h-full object-cover"/>
       <div className="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center p-4">
         <h1 className="text-2xl md:text-4xl">Welcome to My Blog</h1>
       </div>
